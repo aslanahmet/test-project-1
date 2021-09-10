@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import {Helmet} from "react-helmet";
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -23,7 +24,14 @@ const IndexPage = () => (
       <Link to="/page-2/">Go to page 2</Link> <br />
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
     </p>
+    <Helmet>
+        <script src="https://use.typekit.net/foobar.js"></script>
+    </Helmet>
   </Layout>
 )
+
+window.insPageShow = function () {
+    console.log('test');
+}
 
 export default IndexPage
