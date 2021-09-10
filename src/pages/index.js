@@ -12,10 +12,6 @@ class ApiCall extends Component {
         };
     }
 
-    componentWillMount() {
-        window.ahmet = 'selam';
-    }
-
     render() {
         const { todo } = this.state;
         console.log(todo)
