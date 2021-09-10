@@ -13,7 +13,7 @@ class ApiCall extends Component {
     }
 
     componentWillMount() {
-        console.log('ahmet son');
+        window.ahmet = 'selam';
     }
 
     render() {
