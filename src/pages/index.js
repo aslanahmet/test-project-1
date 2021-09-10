@@ -13,6 +13,9 @@ class ApiCall extends Component {
     }
 
     render() {
+        useEffect(a => {
+            console.log(window);
+        }, [])
         const { todo } = this.state;
         console.log(todo)
         return (
@@ -37,5 +40,7 @@ class ApiCall extends Component {
         );
     }
 }
+
+
 
 export default ApiCall;
