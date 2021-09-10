@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
@@ -40,7 +40,5 @@ class ApiCall extends Component {
         );
     }
 }
-
-
 
 export default ApiCall;
